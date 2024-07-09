@@ -47,14 +47,14 @@ With the browser showing..
 
 Uninstall and reinstall Azure Functions Core Tools
 
-`# Uninstall NPM`   
+`# Uninstall Azure Functions Core Tools`   
 `npm uninstall -g azure-functions-core-tools@4`
 
 `#Clear the NPM cache`  
 `npm cache clean --force`
 
-`#Install NPM`  
-`npm inst -g azure-functions-core-tools@4 --unsafe-perm true`
+`#Install Azure Functions Core Tools`  
+`npm i -g azure-functions-core-tools@4 --unsafe-perm true`
 
 `# Install dependencies`    
 `npm install`
