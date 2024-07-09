@@ -42,3 +42,23 @@ dotnet restore, followed by dotnet build.
 And here is an example of the function running OK locally, you should see something similar ![Locally running function](/pics/function_working_locally.png)
 With the browser showing..
 ![function running locally in browser](/pics/function_executing_locally.png)
+
+### And if you are still having trouble, try the following..
+
+Uninstall and reinstall Azure Functions Core Tools
+
+`# Uninstall NPM`   
+`npm uninstall -g azure-functions-core-tools@4`
+
+`#Clear the NPM cache`  
+`npm cache clean --force`
+
+`#Install NPM`  
+`npm inst -g azure-functions-core-tools@4 --unsafe-perm true`
+
+`# Install dependencies`    
+`npm install`
+
+`# Start function with verbose logging` 
+`func start --verbose`  
+Note your version of azure-functions-core-tools may be different to the latest at the time of writing *@4
