@@ -60,5 +60,6 @@ Uninstall and reinstall Azure Functions Core Tools
 `npm install`
 
 `# Start function with verbose logging` 
+
 `func start --verbose`  
 Note your version of azure-functions-core-tools may be different to the latest at the time of writing *@4
