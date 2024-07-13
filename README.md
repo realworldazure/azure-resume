@@ -63,3 +63,19 @@ Uninstall and reinstall Azure Functions Core Tools
 
 `func start --verbose`  
 Note your version of azure-functions-core-tools may be different to the latest at the time of writing *@4
+
+## Setting up CI/CD with GitHub
+
+Steps are as follows
+
+1. In the root folder of your project, create a .github directory
+2. cd into it
+3. make a directory called workflows
+4. cd into it
+4. create a frontend.main.yml file  
+`touch frontend.main.yml`
+5. create a backend.main.yml file
+6. create the SP used for deployment    
+`az ad sp create-for-rbac --name darrenresume-sp --role contributor --scopes /subscriptions/408ae23f-fba4-4e43-881f-d995cd5887bd/resourceGroups/azureresumedr --sdk-auth`
+7. Follow the steps in this [article](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel)
+8. 
