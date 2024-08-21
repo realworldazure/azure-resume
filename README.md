@@ -36,7 +36,7 @@ I used the v4 the self-contained platform image on my Mac, and it worked just fi
 2. Dotnet SDK v6 - updates required to the CosmosDB HTTP trigger
 ![Note the update to containerName and Connection](/pics/dotnet6-functionsv2.png)
 
-3. Function Core Tools flaky behaviour - I experienced some intermittent behaviour on my Mac when running the function locally using Functions Core Tools. It would on occaision not work, reporting a host configuration change error, usually because a file change had been detected. Even when it hadn't. ![Example error](/pics/assembly-error.png)
+3. Function Core Tools flaky behaviour - I experienced some intermittent behaviour on my Mac when running the function locally using Functions Core Tools. It would, on occaision not work, reporting a host configuration change error, usually because a file change had been detected. Even when it hadn't. ![Example error](/pics/assembly-error.png)
 If this happens to you, try running
 dotnet restore, followed by dotnet build.
 And here is an example of the function running OK locally, you should see something similar ![Locally running function](/pics/function_working_locally.png)
@@ -76,6 +76,6 @@ Steps are as follows
 `touch frontend.main.yml`
 5. create a backend.main.yml file
 6. create the SP used for deployment    
-`az ad sp create-for-rbac --name darrenresume-sp --role contributor --scopes /subscriptions/408ae23f-fba4-4e43-881f-d995cd5887bd/resourceGroups/azureresumedr --sdk-auth`
+`az ad sp create-for-rbac --name <yourspname>-sp --role contributor --scopes /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/azureresumedr --sdk-auth`
 7. Follow the steps in this [article](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-static-site-github-actions?tabs=userlevel)
 8. 
