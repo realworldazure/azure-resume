@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', (Event) => {
 })
 
 // local function var for use with Azure Functions Core Tools
-const functionApiUrl = 'https://darrenscv.azurewebsites.net/api/GetResumeCounter?code=UKM3sOLs49fUddTtBfnGdMAH2-Na0j67VD6pbfPZTEpKAzFuRUDhZw%3D%3D'
+const functionApiUrl = 'https://darrenscv.azurewebsites.net/api/GetResumeCounter?code=UKM3sOLs49fUddTtBfnGdMAH2-Na0j67VD6pbfPZTEpKAzFuRUDhZw%3D%3D';
 const localFunctionApi   = 'http://localhost:7071/api/GetResumeCounter';
 
 const getVisitCount = () => {
